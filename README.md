@@ -10,4 +10,4 @@
 
 ---
 
-###  Вся магия по [ссылке на видео ))](https://youtu.be/wys4ovG_Sus)
+###  Вся магия по [ссылке на видео ))](https://youtube.com/playlist?list=PLHyIl59J60-WaiZWlmppGEdMGH5rAcaJN)
