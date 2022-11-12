@@ -297,3 +297,206 @@ body {
 
 
 /* ******************** End hero ******************** */
+
+/* ******************** sction service ******************** */
+.service {
+    padding: 141px 0 166px 0;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.service-content {
+    width: 671px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.service-title {
+    margin-bottom: 20px;
+}
+
+.service-text {
+    margin-bottom: 16px;
+}
+
+.service-item {
+    width: 500px;
+    background: var(--bg-white);
+    position: relative;
+    padding: 40px 59px 40px 163px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.service-item:hover {
+    background: var(--bg-mint-cream);
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: var(--bg-mint-cream);
+    top: 50%;
+    left: 59px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.service-item:hover::before {
+    background: var(--bg-white);
+}
+
+.icon-delivery {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/delivery-man.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.icon-order {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/shopping.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.icon-time {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/fast-time.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 79px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.service-item__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.service-item__text {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-secondary);
+}
+
+.service-link{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 34px;
+    background: url(../images/arrow-down.svg) no-repeat center;
+    bottom: 0;
+    left: 35%;
+    animation: move 2s linear infinite;
+    -webkit-animation: move 2s linear infinite;
+}
+
+
+.service-img {
+    width: 569px;
+    height: 569px;
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+    background-image: url(../images/elips-fruit.png), url(../images/ellipse-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 76px center, right 0 center;
+    background-size: 398px, contain;
+}
+
+.service-img  figure{
+    width: 354px;
+    animation: moveImg 2s linear infinite;
+    -webkit-animation: moveImg 2s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 10px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes moveImg{
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    50%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+
+/* ******************** End sction service ******************** */
