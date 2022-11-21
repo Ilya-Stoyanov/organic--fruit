@@ -17,6 +17,8 @@ font-family: 'Rosario', sans-serif; */
     --bg-mint-cream: #F3FBF8;
     --bg-green-lt: #09A66D;
     --bg-white: #ffffff;
+    --bg-green-lt-op: #09a66d0d;
+   
 
 }
 
@@ -224,21 +226,40 @@ body {
     width: 863px;
 }
 
-.hero-link {
-    position: absolute;
-    top: -18px;
-    right: 20%;
-    width: 176px;
-    height: 64px;
+.link{
+    padding: 10px 5px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
 }
 
-.hero-link::after {
+.link:hover{
+    box-shadow: inset 0px 0px 10px 0px #0000006f;
+}
+
+.hero-link {
+    position: absolute;
+    top: -28px;
+    right: 20%;
+    width: 176px;
+    height: 74px;
+}
+
+.link::after {
     content: "";
     width: 64px;
     height: 64px;
@@ -500,3 +521,44 @@ body {
 
 
 /* ******************** End sction service ******************** */
+
+/* ******************** sction vegetable ******************** */
+.vegetable{
+    background: var(--bg-green-lt-op);
+}
+
+.vegetable-inner-wrapper{
+    padding: 89px 0 143px 0;
+    background-image: url(../images/fresh-melientha-suavis.png);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom;
+    background-size: auto;
+}
+
+.vegetable-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.vegetable-img{
+    width: 600px;
+}
+
+.vegetable-contant{
+    width: 574px;
+    padding-top: 30px;
+}
+
+.vegetable-text{
+    margin: 20px 0 50px 0;
+}
+
+.vegetable-link{
+    width: 179px;
+    height: 74px;
+}
+
+
+/* ******************** end sction vegetable ******************** */
