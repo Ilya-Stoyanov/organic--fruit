@@ -12,6 +12,7 @@ font-family: 'Rosario', sans-serif; */
     --color-secondary: #555555;
     --color-black: #000000;
     --color-white: #ffffff;
+    --btn-border:#ccc;
 
     /* =================== background =================== */
     --bg-mint-cream: #F3FBF8;
@@ -47,6 +48,7 @@ img {
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 
 input {
@@ -520,9 +522,9 @@ body {
 }
 
 
-/* ******************** End sction service ******************** */
+/* ******************** End section service ******************** */
 
-/* ******************** sction vegetable ******************** */
+/* ******************** section vegetable ******************** */
 .vegetable{
     background: var(--bg-green-lt-op);
 }
@@ -561,4 +563,109 @@ body {
 }
 
 
-/* ******************** end sction vegetable ******************** */
+/* ******************** end section vegetable ******************** */
+/* ********************  section customers ******************** */
+.customers{
+    padding: 96px 0 150px 0;
+}
+
+.customer-wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.customer-content{
+    width: 640px;
+    padding-bottom: 34px;
+}
+
+.customer-text{
+    width: 586px;
+    margin: 30px 0 40px 0;
+}
+
+.customer-name{
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.customer-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.customer-starts {
+    display: flex;
+    gap: 9px;
+}
+
+.slider-btn{
+    width: 56px;
+    height: 56px;
+    background: var(--bg-white);
+    border: 1px solid var(--btn-border);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+}
+
+.slider-prev{
+    left: 27%;
+}
+
+.slider-prev::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 18px;
+    background: url(../images/vector-left.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-prev.active{
+    background: var(--bg-green-lt);
+    border: 1px solid var(--bg-green-lt);
+}
+
+.slider-prev.active::before{
+    content: "";
+    background: url(../images/vector-left-active.svg) no-repeat center;
+}
+
+.slider-next{
+    left: 34%;
+}
+
+.slider-next::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 18px;
+    background: url(../images/vector-right.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-next.active{
+    background: var(--bg-green-lt);
+    border: 1px solid var(--bg-green-lt);
+}
+
+.slider-next.active::before{
+    content: "";
+    background: url(../images/vector-right-active.svg) no-repeat center;
+}
+
+/* ******************** end section customers ******************** */
