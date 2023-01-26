@@ -1,19 +1,39 @@
 @media(max-width:1250px) {
+    .header {
+        height: 96px;
+    }
+
     .header__fixed {
-        padding: 50px 10px 43px 10px;
+        padding: 20px 10px 20px
     }
 
     .hero-inner-wrapper {
-        padding: 93px 10px 33px 10px;
+        padding: 100px 10px 33px 10px;
         background-size: auto;
     }
 
     .service {
-        padding: 141px 10px 166px 10px;
+        padding: 140px 10px 165px 10px;
     }
 
-    .wrapper.vegetable-inner-wrapper {
+    .vegetable-inner-wrapper {
         padding: 89px 10px 143px 10px;
+    }
+    .customers {
+        padding: 96px 10px 150px 10px;
+    }
+
+    .customer-title {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .app {
+        padding:0 10px 140px 10px;
+    }
+
+    .footer {
+        padding: 67px 10px 118px;
     }
 }
 
@@ -21,43 +41,49 @@
     .hero-wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
     }
 
     .hero-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        flex: 1;
-        gap: 10px
-    }
-
-    .hero-item:not(:last-child) {
-        margin-bottom: 0px;
     }
 
     .hero-img {
         width: 100%;
+        padding-left: 0px
     }
 
+    .customer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .footer-block {
+        width: 48%;
+    }
 }
+
 
 @media(max-width:850px) {
     .nav {
         position: absolute;
-        z-index: 2;
-        background: var(--bg-white);
-        left: -50%;
+        z-index: 3;
+        left: -20%;
         right: 100%;
-        bottom: 0;
-        top: 120px;
+        top: 95px;
         height: 100vh;
+        background: var(--bg-white);
         overflow-x: hidden;
-        border-top: 1px solid var(--btn-border);
-        transition: 0.3s linear;
+        border-top: 1px solid #9e9e9e;
+        transition: 0.5s ease;
     }
 
-    .nav.active {
+    .nav.open {
         right: 0;
         left: 0;
     }
@@ -68,13 +94,19 @@
         gap: 30px;
     }
 
+
+    .menu__item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+
     .burger {
         display: block;
         width: 60px;
         height: 40px;
         background: url(../images/burger.svg) no-repeat center;
+        transition: 0.3s ease-in-out;
         transform: rotate(0deg);
-        transition: 0.3s linear;
     }
 
     .burger.active {
@@ -84,32 +116,57 @@
 }
 
 @media(max-width:768px) {
-    .header-logo {
-        width: 45px;
-    }
-
     .header-link {
         display: none;
     }
 
     .cart {
-        margin: 0 5px 0 20px;
+        margin: 0 0px 0 20px;
+    }
+
+    .hero-text {
+        width: 100%;
     }
 
     .service-content {
         width: 100%;
     }
 
-    .service-item {
-        margin: 0 auto 20px;
+    .customer-content {
+        width: 100%;
+        padding-bottom: 30px;
     }
 
-    .wrapper.vegetable-inner-wrapper {
-        background-size: 50%;
+    .inner-title {
+        text-align: center;
+    }
+
+    .customer-text {
+        width: 100%;
+    }
+
+    .app-contant {
+        width: 100%;
+    }
+
+    .app-text {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 67px 10px 70px;
+    }
+
+    .footer-titile {
+        margin: 0 0 40px 0;
     }
 }
 
 @media(max-width:590px) {
+    .hero-title {
+        font-size: 70px;
+    }
+
     .service-wrapper {
         gap: 50px;
     }
@@ -121,38 +178,42 @@
         background-position: bottom 0px center;
         background-size: auto;
     }
+
+    .customer-img {
+        width: 100%;
+    }
 }
 
 @media(max-width:450px) {
-    form.form {
+    .header-btn {
         display: none;
     }
 
-    .cart {
-        margin: 0 5px 0 0px;
+    .hero-title {
+        font-size: 60px;
     }
 
-    .hero-title {
+    .service-img {
+        background-size: 100%;
+    }
+
+    .inner-title {
         font-size: 50px;
-        line-height: 70px;
+        line-height: 60px;
+        text-align: center;
     }
 
     .service-item {
         padding: 40px 20px 40px 20px;
     }
 
-    .service-item span:first-child,
-    .service-item::before {
+    .icon-delivery,
+    .icon-online,
+    .icon-time {
         display: none;
     }
 
-    .inner-title {
-        font-size: 45px;
-        line-height: 60px;
-        text-align: center;
-    }
-
-    .service-img {
-        background-size: 100%;
+    .service-item::before{
+        display: none;
     }
 }
