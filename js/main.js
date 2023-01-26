@@ -1,24 +1,44 @@
 $(document).ready(function () {
+    // starts
     $(".customer-starts").starRating({
         totalStars:5,
         strokeColor: '#F1B90B',
         ratedColor: '#F1B90B',
-        starSize: 23,
-        readOnly: true,
-        strokeWidth: 20,
+        strokeWidth: 10,
+        starSize: 22,
+        readOnly: true
       });
 
-    //   slider
+    //  slick slider
     $(".customers-slider").slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button class="btn slider-btn slider-prev"></button>',
-        nextArrow: '<button class="btn slider-btn slider-next active"></button>',
+        autoplay: false,
+        autoplaySpeed: 2000,
+
+        prevArrow: '<button class="slider-prev slider-btn btn active"></button>',
+        nextArrow: '<button class="slider-next slider-btn btn"></button>',
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                  arrows: false,
+                  dots: true
+                }
+            }
+        ]
     });
 
     $('.slider-btn').click(function(){
-        $('.slider-btn').removeClass("active");
-        $(this).addClass("active")
+        $('.slider-btn').removeClass('active');
+        $(this).addClass('active');
+
     })
+
+    $(".burger").click(function(){
+        $(".burger").toggleClass("active")
+        $(".nav").toggleClass("open")
+    })
+
 });
