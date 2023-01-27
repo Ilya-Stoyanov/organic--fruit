@@ -19,10 +19,10 @@ $(document).ready(function () {
             {
                 breakpoint: 981,
                 settings: {
-                    arrows: false,
-                    dots: true
+                  arrows:false,
+                  dots: true
                 }
-              },
+            },
         ]
     });
 

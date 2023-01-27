@@ -700,13 +700,12 @@ body {
 }
 
 .slick-dots {
+    display: flex;
+    gap: 15px;
     position: absolute;
     left: 50%;
     bottom: -50px;
-    display: flex;
-    gap: 15px;
     transform: translateX(-50%);
-    transition: 0.2s ease;
 }
 
 .slick-dots li{
@@ -722,14 +721,12 @@ body {
     background: #555;
 }
 
-.slick-dots button{
+.slick-dots li button{
     font-size: 0;
     line-height: 0;
     border: none;
-    outline: none;
     background: transparent;
 }
-
 
 /* ******************** end section customers ******************** */
 
